@@ -264,8 +264,24 @@ video {
         font-size: 40px;
     }
 
+    #Text-Header {
+        font-size: 11.5px;
+    }
+
     .text-size2 {
         font-size: 25px;
+    }
+
+    .font-number {
+        font-size: 100px;
+    }
+
+    .text-cont-main {
+        font-size: 25px;
+    }
+
+    #Text-Product {
+        font-size: 20px;
     }
 
     .content-1 {
@@ -273,7 +289,7 @@ video {
     }
 
     .content-2 {
-        width: 150px;
+        width: 140px;
 
     }
 
@@ -286,4 +302,52 @@ video {
     .mb-5 {
         margin-bottom: 10rem !important;
     }
+
+    #LogoText {
+        font-size: 13px;
+        text-align: center;
+        margin: 0;
+    }
+
+
+    #LogoText::after {
+        content: "";
+        display: block;
+        width: 90px;
+        height: 2px;
+        margin: 2px auto;
+        background-color: #01996D;
+    }
+
+    #LogoText.mt-2 {
+        margin-top: 0.1rem !important;
+    }
+
+    #Name {
+        font-size: 13px;
+    }
+
+    #Name.mt-2 {
+        margin-top: 0.1rem !important;
+    }
+
+    #Name.mb-2 {
+        margin-bottom: 0.1rem !important;
+    }
+
+    #LogoText2 {
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .L-Text {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .start-012 {
+        left: -5% !important;
+    }
+
 }
