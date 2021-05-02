@@ -2,6 +2,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+::selection {
+    color: #ffffff;
+    background-color: #00D5E4;
+}
+
 .bg-header {
     background-color: #EEEFF1;
 }
@@ -33,7 +38,7 @@
 .btn {
 
     line-height: 2;
-    border-radius: 0.10rem;
+    border-radius: 0.15rem;
 }
 
 .btn-primary {
@@ -45,7 +50,21 @@
 .btn-primary:hover {
     color: #000000;
     background-color: #00D5E4;
-    border-color: #00D5E4;
+    border-color: #000000;
+}
+
+.btn-animation:hover {
+    transition: all .1s;
+    animation: shadow .6s infinite alternate-reverse;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 10px 0 #a0a0a0, 0 0 10px 0 #00D5E4;
+    }
+    100% {
+        box-shadow: 0 0 8px 4px rgba(255, 48, 26, 0), 0 0 2px 10px rgba(255, 48, 26, 0);
+    }
 }
 
 .p-main {
