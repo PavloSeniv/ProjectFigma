@@ -2,33 +2,107 @@
 All
 --------------------------------------*/
 
-*{
+* {
     font-family: 'Catamaran', sans-serif;
 }
 
 /*--------------------------------------
 Header
 --------------------------------------*/
+
+.navbar-brand-text {
+    font-size: 40px;
+    color: #A3C1EF;
+    margin-left: -35px;
+}
+
+.navbar-brand-text:hover, :focus {
+    color: #163561;
+}
+
+.nav-item {
+    margin-top: -105px;
+}
+
 .nav-link {
     display: block;
-    width: 100px;
-    padding: 0.5rem 1rem;
+    width: 120px;
     text-decoration: none;
-
+    font-size: 25px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+    height: 150px;
+    padding: 110px 5px 0 5px;
 }
 
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-    background-color: #A3C1EF;
+.navbar-light .navbar-nav .nav-link {
+    color: #163561;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
     color: #ffffff;
+    background-color: #A3C1EF;
 }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-    color: #000000;
+.content-block {
+    margin-top: 70px;
 }
+
+.btn {
+    border-radius: 10px;
+    height: 75px;
+    width: 170px;
+}
+
+.btn-font-size {
+    font-size: 20px;
+}
+
+.btn-outline-primary {
+    color: #ffffff;
+    background-color: #A3C1EF;
+    border-color: #A3C1EF;
+}
+
+.btn-outline-primary:hover {
+    color: #163561;
+    background-color: #A3C1EF;
+    border-color: #A3C1EF;
+}
+
+.Profile-block {
+    margin: 15px 50px 0 50px;
+}
+
+.Notification-block {
+    margin: 15px 50px 0 0;
+}
+
 /*--------------------------------------
 Home
 --------------------------------------*/
+.main-font-size {
+    font-size: 75px;
+    color: #163561;
+}
+
+.main-font-size-1 {
+    font-size: 25px;
+    color: #153461;
+}
+
+.yellow-text {
+    color: #FBB400;
+}
+
+.padding-home {
+    padding: 140px 0 0 300px;
+}
+
+.margin-home {
+    margin: 12px;
+}
 
 /*--------------------------------------
 History
