@@ -6,6 +6,11 @@ All
     font-family: 'Catamaran', sans-serif;
 }
 
+::selection {
+    background-color: #A3C1EF;
+    color: #ffffff;
+}
+
 /*--------------------------------------
 Header
 --------------------------------------*/
@@ -108,15 +113,290 @@ Home
 History
 --------------------------------------*/
 
+.Figure_1 {
+    float: left;
+}
+
+.Figure_2 {
+    float: right;
+}
+
+/*.Figure_2 {
+    float: right;
+    width: 350px;
+    height: 500px;
+    border-radius: 0 100% 0 100% / 0 0 100% 100%;
+    background: linear-gradient(5deg, rgba(163, 193, 239, 1) 0%, rgba(255, 255, 255, 1) 75%);
+    background-size: 200% 200%;
+    animation: gradient 2s ease infinite; !*Анімація градіента*!
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}*/
+
 /*--------------------------------------
 Service
 --------------------------------------*/
 
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #FAFBFF;
+    background-clip: border-box;
+    border: 1px solid #FAFBFF;
+    border-bottom: 4px solid #99BAED;;
+    border-radius: 1rem;
+    color: #163561;
 
-/*--------------------------------------
+}
+
+.card:hover {
+    background-color: #99BAED;
+    color: #ffffff;
+
+}
+
+.service__logo {
+    width: 6rem;
+    height: 7rem;
+    margin: 2rem auto 2rem auto;
+    background-color: #E5ECFE;
+    border-bottom: 2px solid #5b95ec;;
+    border-radius: 1rem;
+}
+
+.card-title {
+    margin-bottom: 3rem;
+    font-size: 45px;
+    text-align: center;
+}
+
+.card-text:last-child {
+    margin-bottom: 3rem;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Figure_3 {
+    float: left;
+
+}
+
+.Figure_4 {
+    float: right;
+}
+
+/*!*--------------------------------------
 Gallary
---------------------------------------*/
+--------------------------------------*!
 
-/*--------------------------------------
+.Figure_5 {
+    clear: left;
+    float: left;
+}
+
+.Figure_6 {
+    clear: right;
+    float: right;
+}
+
+.clear {
+    clear: left;
+}*/
+
+/*
+!*--------------------------------------
 Footer
---------------------------------------*/
+--------------------------------------*!
+
+.Figure_7 {
+    float: left;
+}
+
+
+.Figure_8 {
+    float: right;
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+}
+
+!*--------------------------------------
+Media
+--------------------------------------*!
+
+@media (max-width: 575px) {
+
+    !*--------------------
+    Header
+    ---------------------*!
+    .nav-item {
+        margin-top: 0;
+    }
+
+    .nav-link {
+        display: inline-block;
+        width: auto;
+        text-decoration: none;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 0;
+        height: 100%;
+        padding: 0;
+    }
+
+    .Figure_1 {
+        display: none;
+    }
+
+    .Figure_2 {
+        display: none;
+    }
+
+    .Figure_3 {
+        display: none;
+    }
+
+    .Figure_4 {
+        display: none;
+    }
+
+    .Figure_5 {
+        display: none;
+    }
+
+    .Figure_6 {
+        display: none;
+    }
+
+    .Figure_7 {
+        display: none;
+    }
+
+    .Figure_8 {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .Figure_1 {
+        display: none;
+    }
+
+    .Figure_2 {
+        display: none;
+    }
+
+    .Figure_3 {
+        display: none;
+    }
+
+    .Figure_4 {
+        display: none;
+    }
+
+    .Figure_5 {
+        display: none;
+    }
+
+    .Figure_6 {
+        display: none;
+    }
+
+    .Figure_7 {
+        display: none;
+    }
+
+    .Figure_8 {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Figure_1 {
+        display: none;
+    }
+
+    .Figure_2 {
+        display: none;
+    }
+
+    .Figure_3 {
+        display: none;
+    }
+
+    .Figure_4 {
+        display: none;
+    }
+
+    .Figure_5 {
+        display: none;
+    }
+
+    .Figure_6 {
+        display: none;
+    }
+
+    .Figure_7 {
+        display: none;
+    }
+
+    .Figure_8 {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Figure_1 {
+        display: none;
+    }
+
+    .Figure_2 {
+        display: none;
+    }
+
+    .Figure_3 {
+        display: none;
+    }
+
+    .Figure_4 {
+        display: none;
+    }
+
+    .Figure_5 {
+        display: none;
+    }
+
+    .Figure_6 {
+        display: none;
+    }
+
+    .Figure_7 {
+        display: none;
+    }
+
+    .Figure_8 {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+}*/
