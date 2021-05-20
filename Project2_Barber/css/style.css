@@ -1,7 +1,6 @@
 /*--------------------------------------
 All
 --------------------------------------*/
-
 * {
     font-family: 'Catamaran', sans-serif;
 }
@@ -14,14 +13,13 @@ All
 /*--------------------------------------
 Header
 --------------------------------------*/
-
-.navbar-brand-text {
+.navbar__brand__text {
     font-size: 40px;
     color: #A3C1EF;
     margin-left: -35px;
 }
 
-.navbar-brand-text:hover, :focus {
+.navbar__brand__text:hover, :focus {
     color: #163561;
 }
 
@@ -60,7 +58,7 @@ Header
     width: 170px;
 }
 
-.btn-font-size {
+.btn__font__size {
     font-size: 20px;
 }
 
@@ -87,39 +85,30 @@ Header
 /*--------------------------------------
 Home
 --------------------------------------*/
-.main-font-size {
+.h1__font__size {
     font-size: 75px;
     color: #163561;
 }
 
-.main-font-size-1 {
+.text__font__size__p {
     font-size: 25px;
     color: #153461;
 }
 
-.yellow-text {
+.text__yellow {
     color: #FBB400;
-}
-
-.padding-home {
-    padding: 140px 0 0 300px;
-}
-
-.margin-home {
-    margin: 12px;
 }
 
 /*--------------------------------------
 History
 --------------------------------------*/
-
-.Figure_1 {
+/*.Figure_1 {
     float: left;
 }
 
 .Figure_2 {
     float: right;
-}
+}*/
 
 /*.Figure_2 {
     float: right;
@@ -130,7 +119,6 @@ History
     background-size: 200% 200%;
     animation: gradient 2s ease infinite; !*Анімація градіента*!
 }
-
 
 @keyframes gradient {
     0% {
@@ -147,7 +135,6 @@ History
 /*--------------------------------------
 Service
 --------------------------------------*/
-
 .card {
     position: relative;
     display: flex;
@@ -190,6 +177,7 @@ Service
     text-align: center;
 }
 
+/*
 .Figure_3 {
     float: left;
 
@@ -198,12 +186,16 @@ Service
 .Figure_4 {
     float: right;
 }
+*/
 
 /*--------------------------------------
 Gallary
 --------------------------------------*/
+.image__gallery {
 
-.Figure_5 {
+}
+
+/*.Figure_5 {
     clear: both;
     float: left;
 }
@@ -215,12 +207,12 @@ Gallary
 
 .clear {
     clear: left;
-}
+}*/
 
 /*--------------------------------------
 Footer
 --------------------------------------*/
-
+/*
 .Figure_7 {
     float: left;
 }
@@ -229,16 +221,31 @@ Footer
 .Figure_8 {
     float: right;
 }
+*/
 
-.circle {
-    width: 75px;
-    height: 75px;
+.social__circle {
+    width: 40px;
+    height: 40px;
+    background-color: #99BAED;
+    margin: 10px;
+}
+
+.social__circle:hover {
+    background-color: #163561;
+}
+
+hr {
+    background-color: #99BAED;
+    opacity: 1;
+}
+
+hr:not([size]) {
+    height: 2px;
 }
 
 /*--------------------------------------
 Media
 --------------------------------------*/
-
 @media (max-width: 575px) {
 
     /*--------------------
@@ -260,140 +267,140 @@ Media
         padding: 0;
     }
 
-    .Figure_1 {
-        display: none;
-    }
+    /* .Figure_1 {
+         display: none;
+     }
 
-    .Figure_2 {
-        display: none;
-    }
+     .Figure_2 {
+         display: none;
+     }
 
-    .Figure_3 {
-        display: none;
-    }
+     .Figure_3 {
+         display: none;
+     }
 
-    .Figure_4 {
-        display: none;
-    }
+     .Figure_4 {
+         display: none;
+     }
 
-    .Figure_5 {
-        display: none;
-    }
+     .Figure_5 {
+         display: none;
+     }
 
-    .Figure_6 {
-        display: none;
-    }
+     .Figure_6 {
+         display: none;
+     }
 
-    .Figure_7 {
-        display: none;
-    }
+     .Figure_7 {
+         display: none;
+     }
 
-    .Figure_8 {
-        display: none;
-    }
+     .Figure_8 {
+         display: none;
+     }*/
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .Figure_1 {
-        display: none;
-    }
+    /* .Figure_1 {
+         display: none;
+     }
 
-    .Figure_2 {
-        display: none;
-    }
+     .Figure_2 {
+         display: none;
+     }
 
-    .Figure_3 {
-        display: none;
-    }
+     .Figure_3 {
+         display: none;
+     }
 
-    .Figure_4 {
-        display: none;
-    }
+     .Figure_4 {
+         display: none;
+     }
 
-    .Figure_5 {
-        display: none;
-    }
+     .Figure_5 {
+         display: none;
+     }
 
-    .Figure_6 {
-        display: none;
-    }
+     .Figure_6 {
+         display: none;
+     }
 
-    .Figure_7 {
-        display: none;
-    }
+     .Figure_7 {
+         display: none;
+     }
 
-    .Figure_8 {
-        display: none;
-    }
+     .Figure_8 {
+         display: none;
+     }*/
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .Figure_1 {
-        display: none;
-    }
+    /* .Figure_1 {
+         display: none;
+     }
 
-    .Figure_2 {
-        display: none;
-    }
+     .Figure_2 {
+         display: none;
+     }
 
-    .Figure_3 {
-        display: none;
-    }
+     .Figure_3 {
+         display: none;
+     }
 
-    .Figure_4 {
-        display: none;
-    }
+     .Figure_4 {
+         display: none;
+     }
 
-    .Figure_5 {
-        display: none;
-    }
+     .Figure_5 {
+         display: none;
+     }
 
-    .Figure_6 {
-        display: none;
-    }
+     .Figure_6 {
+         display: none;
+     }
 
-    .Figure_7 {
-        display: none;
-    }
+     .Figure_7 {
+         display: none;
+     }
 
-    .Figure_8 {
-        display: none;
-    }
+     .Figure_8 {
+         display: none;
+     }*/
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .Figure_1 {
-        display: none;
-    }
+    /*  .Figure_1 {
+          display: none;
+      }
 
-    .Figure_2 {
-        display: none;
-    }
+      .Figure_2 {
+          display: none;
+      }
 
-    .Figure_3 {
-        display: none;
-    }
+      .Figure_3 {
+          display: none;
+      }
 
-    .Figure_4 {
-        display: none;
-    }
+      .Figure_4 {
+          display: none;
+      }
 
-    .Figure_5 {
-        display: none;
-    }
+      .Figure_5 {
+          display: none;
+      }
 
-    .Figure_6 {
-        display: none;
-    }
+      .Figure_6 {
+          display: none;
+      }
 
-    .Figure_7 {
-        display: none;
-    }
+      .Figure_7 {
+          display: none;
+      }
 
-    .Figure_8 {
-        display: none;
-    }
-
+      .Figure_8 {
+          display: none;
+      }
+  */
 }
 
 @media (min-width: 1200px) {
