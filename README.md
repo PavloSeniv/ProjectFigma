@@ -11,8 +11,8 @@ HTML, CSS and [Bootstrap 5](https://getbootstrap.com/), and is published with Gi
 
 | # | Project | What it is | Stack | Live demo |
 |---|---------|------------|-------|-----------|
-| 1 | **[Alivio](Project1/)** | Landing page for a stress-management journaling app | HTML5 · Bootstrap 5.0.0-beta2 · custom CSS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Project1/) |
-| 2 | **[Barber](Project2_Barber/)** | Landing page for a barbershop | HTML5 · Bootstrap 5.0.1 · WebP · custom CSS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Project2_Barber/) |
+| 1 | **[Alivio](Project1/)** | Landing page for a stress-management journaling app | HTML5 · Bootstrap 5.0.0-beta2 · custom CSS/JS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Project1/) |
+| 2 | **[Barber](Project2_Barber/)** | Landing page for a barbershop | HTML5 · Bootstrap 5.0.1 · WebP · custom CSS/JS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Project2_Barber/) |
 
 Each project has its own `README.md` with full details.
 
@@ -60,8 +60,8 @@ python3 -m http.server 8000       # then visit http://localhost:8000/Project1/
 
 | # | Проект | Що це | Стек | Демо |
 |---|--------|-------|------|------|
-| 1 | **[Alivio](Project1/)** | Лендинг застосунку-щоденника для керування стресом | HTML5 · Bootstrap 5.0.0-beta2 · власний CSS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Project1/) |
-| 2 | **[Barber](Project2_Barber/)** | Лендинг барбершопу | HTML5 · Bootstrap 5.0.1 · WebP · власний CSS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Project2_Barber/) |
+| 1 | **[Alivio](Project1/)** | Лендинг застосунку-щоденника для керування стресом | HTML5 · Bootstrap 5.0.0-beta2 · власний CSS/JS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Project1/) |
+| 2 | **[Barber](Project2_Barber/)** | Лендинг барбершопу | HTML5 · Bootstrap 5.0.1 · WebP · власний CSS/JS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Project2_Barber/) |
 
 Детальний опис кожного проекту — у його власному `README.md`.
 

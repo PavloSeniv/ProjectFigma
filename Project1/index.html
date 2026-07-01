@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Seniv Pavlo">
-    <title>Alivio</title>
+    <meta name="description"
+          content="Alivio — a personalized journaling experience that helps you become aware of and manage your stress.">
+    <meta name="theme-color" content="#01996D">
+    <title>Alivio — Manage your stress</title>
+    <link rel="icon" href="img/logo_photo2.png" type="image/png">
     <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&family=Suez+One&display=swap"
           rel="stylesheet">
 </head>
 <body class="text-Lato">
 
+<a class="skip-link" href="#Solutions">Skip to main content</a>
+
 <header class="container-fluid p-0">
 
-    <section id="WhyAlivio" class="bg-photo1">
+    <section id="WhyAlivio" class="bg-photo1" aria-labelledby="hero-title">
 
-        <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light_1 border-bottom border-dark">
+        <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light_1 border-bottom border-dark"
+             aria-label="Main navigation">
             <div class="container p-0">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
@@ -28,34 +34,35 @@
                 </button>
                 <a class="navbar-brand" href="index.html"><b class="fs-1 brand-color">Alivio</b></a>
                 <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav ms-lg-5 me-auto  text-center ps-3 pe-3">
+                    <ul class="navbar-nav ms-lg-5 me-auto text-center ps-3 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#WhyAlivio">Why Alivio</a>
+                            <a class="nav-link" href="#WhyAlivio">Why Alivio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#Solutions">Solutions</a>
+                            <a class="nav-link" href="#Solutions">Solutions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#Community">Community</a>
+                            <a class="nav-link" href="#Community">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#Pricing">Pricing</a>
+                            <a class="nav-link" href="#Pricing">Pricing</a>
                         </li>
                     </ul>
-                    <form class="d-flex justify-content-center ">
-                        <button class="btn btn-outline-success ms-2 me-2" type="button">Sign in</button>
-                        <button class="btn btn-outline-success btn-bg text-white btn-w" type="button">Start Trial
-                        </button>
-                    </form>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-outline-success ms-2 me-2" type="button"
+                                data-bs-toggle="modal" data-bs-target="#signInModal">Sign in</button>
+                        <button class="btn btn-outline-success btn-bg text-white btn-w" type="button"
+                                data-bs-toggle="modal" data-bs-target="#trialModal">Start Trial</button>
+                    </div>
                 </div>
             </div>
         </nav>
 
         <div class="container position-relative top-25">
-            <h1 class="text-green text-size mb-3"><b>Be aware,<br> Manage well.</b></h1>
+            <h1 id="hero-title" class="text-green text-size mb-3"><b>Be aware,<br> Manage well.</b></h1>
             <p id="Text-Header" class="mb-3">Everyone experiences stress in different ways.<br>
                 Let Alivio guide you, in a personalized <br> journal experience, to overcome your stress.</p>
-            <a href="#Pricing" class="btn btn-outline-success btn-bg text-white btn-w mt-3" type="button">
+            <a href="#Pricing" class="btn btn-outline-success btn-bg text-white btn-w mt-3" role="button">
                 Find Your Way
             </a>
         </div>
@@ -65,105 +72,106 @@
 </header>
 
 <main>
-    <div id="Solutions" class="container pt-5 pb-5">
+    <section id="Solutions" class="container pt-5 pb-5" aria-labelledby="solutions-heading">
         <div class="row">
             <div class="col-lg-6 text-size2">
-                <h5>How it works</h5>
-                <p class="text-green"><b>Understand & Release <br>
+                <h2 class="h5" id="solutions-heading">How it works</h2>
+                <p id="solutions-title" class="text-green"><b>Understand &amp; Release <br>
                     the stress in 3 steps</b></p>
             </div>
 
             <div class="col-lg-6 mt-lg-5">
-                <p class="">Alivio offers as many journals it takes, tackling different areas such as anxiety,
+                <p>Alivio offers as many journals it takes, tackling different areas such as anxiety,
                     overwhelmedness,
                     sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and
                     guide you in how to manage stress.</p>
             </div>
 
+            <div class="col-12">
             <div class="row">
 
                 <div class="col-lg-4">
-                    <h1 class="font-number m-0">01</h1>
-                    <span class="text-cont-main position-relative bottom-9 start-12">
-                        <b>Personalize</b>
-                    </span>
+                    <p class="font-number m-0" aria-hidden="true">01</p>
+                    <h3 class="text-cont-main position-relative bottom-9 start-12 mb-0">Personalize</h3>
                     <p class="mb-4">
                         Answer a quick survey about how you express yourself, what causes you stress, and what area
                         would
                         you like to work on. This way, we can fully personalize your journal!
                     </p>
                     <div class="d-flex justify-content-center w-100">
-                        <img class="img-fluid" src="img/Photo4.png" alt="Photo4">
+                        <img class="img-fluid" src="img/Photo4.png"
+                             alt="Person answering a personalization survey on their phone">
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-lg-5">
-                    <h1 class="font-number m-0">02</h1>
-                    <span class="text-cont-main position-relative bottom-9 start-12">
-                        <b>Write & Understand</b>
-                    </span>
+                    <p class="font-number m-0" aria-hidden="true">02</p>
+                    <h3 class="text-cont-main position-relative bottom-9 start-12 mb-0">Write &amp; Understand</h3>
                     <p class="mb-4">
                         Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you
                         manage your stress!
                     </p>
                     <div class="d-flex justify-content-center w-100">
-                        <img class="img-fluid" src="img/Photo3.png" alt="Photo3">
+                        <img class="img-fluid" src="img/Photo3.png"
+                             alt="Journaling and reflecting in the Alivio app">
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-lg-3">
-                    <h1 class="font-number m-0">03</h1>
-                    <span class="text-cont-main position-relative bottom-9 start-12">
-                        <b>Alivio!</b>
-                    </span>
+                    <p class="font-number m-0" aria-hidden="true">03</p>
+                    <h3 class="text-cont-main position-relative bottom-9 start-12 mb-0">Alivio!</h3>
                     <p class="mb-4">
                         Now you are aware, and have a way to manage and overcome your own stress.
                         What are you waiting for? Alivio today!
                     </p>
                     <div class="d-flex justify-content-center w-100">
-                        <img class="img-fluid" src="img/Photo2.png" alt="Photo2">
+                        <img class="img-fluid" src="img/Photo2.png"
+                             alt="Person feeling relieved after journaling with Alivio">
                     </div>
                 </div>
             </div>
+            </div>
 
         </div>
-    </div>
+    </section>
 
-    <div id="Community" class="container-fluid p-section-2 m-0 bg-section-2 ">
+    <section id="Community" class="container-fluid p-section-2 m-0 bg-section-2" aria-labelledby="community-title">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 pt-5 pb-5  align-self-center">
-                    <p class="text-white text-size2"><b>Let's hear about <br> Kayla's success story</b></p>
-                    <p class="text-white">See how well Alivio works in a real customer’s life. </p>
-                    <a href="#Pricing" class="btn btn-outline-success btn-bg text-white btn-w" type="button">Let’s get
-                        started
-                    </a>
+                <div class="col-lg-6 pt-5 pb-5 align-self-center">
+                    <h2 id="community-title" class="text-white text-size2"><b>Let's hear about <br> Kayla's success story</b></h2>
+                    <p class="text-white">See how well Alivio works in a real customer's life.</p>
+                    <button type="button" class="btn btn-outline-success btn-bg text-white btn-w"
+                            data-bs-toggle="modal" data-bs-target="#trialModal">Let's get started
+                    </button>
                 </div>
 
                 <div class="col-lg-6 pt-5 pb-5">
-                    <video class="w-100" controls="controls" muted preload="metadata" poster="">
+                    <video class="w-100" controls muted preload="metadata"
+                           aria-label="Kayla's success story with Alivio">
                         <source src="video/video1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="Pricing" class="container mt-mb-100">
+    <section id="Pricing" class="container mt-mb-100" aria-labelledby="pricing-title">
         <div class="row">
             <div class="d-flex justify-content-center col-lg-6 mb-lg-5 mb-md-5 mb-sm-5 mb-5">
 
                 <div class="content-1">
-                    <section class="Photo5">
+                    <div class="Photo5">
                         <div class="bg-light_1 position-relative top-70 start-012 border border-2 border-green content-2">
                             <h3 class="mt-2" id="LogoText">
                                 Customized For
                             </h3>
-                            <span class="d-flex  justify-content-center">
-                                    <img class="rounded-circle" src="img/logo_photo1.png" alt="logo_photo1">
+                            <span class="d-flex justify-content-center">
+                                    <img class="rounded-circle" src="img/logo_photo1.png" alt="Lisa's profile photo">
                                 </span>
-                            <h5 id="Name" class="text-center mt-2 mb-2">Lisa</h5>
-                            <h2 id="LogoText2">Your custom contents</h2>
+                            <p id="Name" class="text-center mt-2 mb-2 h5">Lisa</p>
+                            <p id="LogoText2">Your custom contents</p>
                             <ul class="text-start L-Text">
                                 <li>
                                     Understand Your Stress
@@ -173,12 +181,12 @@
                                 </li>
                             </ul>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
 
             <div class="col-lg-6 ps-5 pe-5 mt-5">
-                <h5>Our product</h5>
+                <h2 class="h5" id="pricing-title">Our product</h2>
                 <p class="fs-1 text-green text-size2">
                     <b id="Text-Product">You tell us your stress, <br>
                         We make your diary
@@ -188,14 +196,14 @@
                     Everyone experiences it, and in different ways.
                     Let Alivio guide you, in a personalized journal experience, to overcome your stress.
                 </p>
-                <a href="mailto:enazydragnil@gmail.com" class="btn btn-outline-success btn-bg text-white btn-w"
-                   type="button">
+                <button type="button" class="btn btn-outline-success btn-bg text-white btn-w"
+                        data-bs-toggle="modal" data-bs-target="#trialModal">
                     Find Your Way
-                </a>
+                </button>
             </div>
         </div>
 
-    </div>
+    </section>
 
 </main>
 
@@ -206,9 +214,99 @@
         <a href="#Solutions" class="nav-link fs-5 link-light">Solutions</a>
         <a href="#Community" class="nav-link fs-5 link-light">Community</a>
         <a href="#Pricing" class="nav-link fs-5 link-light">Pricing</a>
+
+        <form class="newsletter needs-validation d-flex flex-wrap gap-2 mt-4" id="newsletterForm" novalidate>
+            <label class="visually-hidden" for="newsletterEmail">Email address</label>
+            <input type="email" class="form-control newsletter__input" id="newsletterEmail"
+                   placeholder="Your email" required>
+            <button type="submit" class="btn btn-outline-success btn-bg text-white btn-w">Subscribe</button>
+            <div class="invalid-feedback w-100 text-white">Please enter a valid email address.</div>
+        </form>
     </div>
 </footer>
 
+<!-- Sign-in modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-4 brand-color" id="signInModalLabel">Sign in to Alivio</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="signInForm" class="needs-validation" novalidate>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="siEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="siEmail" required>
+                        <div class="invalid-feedback">Please enter your email.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="siPass" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="siPass" required minlength="6">
+                        <div class="invalid-feedback">Password must be at least 6 characters.</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-outline-success btn-bg text-white w-100">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Start trial modal -->
+<div class="modal fade" id="trialModal" tabindex="-1" aria-labelledby="trialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-4 brand-color" id="trialModalLabel">Start your free trial</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="trialForm" class="needs-validation" novalidate>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="trName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="trName" required>
+                        <div class="invalid-feedback">Please tell us your name.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="trEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="trEmail" required>
+                        <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="trFocus" class="form-label">What would you like to work on?</label>
+                        <select class="form-select" id="trFocus" required>
+                            <option value="" selected disabled>Choose a focus area…</option>
+                            <option>Anxiety</option>
+                            <option>Feeling overwhelmed</option>
+                            <option>Sadness</option>
+                            <option>Anger management</option>
+                        </select>
+                        <div class="invalid-feedback">Please choose a focus area.</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-outline-success btn-bg text-white">Start trial</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="appToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto brand-color" id="toastTitle">Alivio</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body" id="toastBody"></div>
+    </div>
+</div>
+
 <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

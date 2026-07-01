@@ -1,107 +1,196 @@
 /*--------------------------------------
-All
+  Design tokens
 --------------------------------------*/
 
-* {
-  font-family: 'Catamaran', sans-serif;
-}
-
-::selection {
-  background-color: #A3C1EF;
-  color: #ffffff;
+:root {
+  --brand-navy: #163561;
+  --brand-blue: #A3C1EF;
+  --brand-blue-mid: #99BAED;
+  --brand-blue-bright: #5B95EC;
+  --brand-yellow: #FBB400;
+  --brand-bg-soft: #FAFBFF;
+  --brand-bg-tint: #E5ECFE;
+  --nav-offset: 90px;
 }
 
 /*--------------------------------------
-Header
+  Base
 --------------------------------------*/
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  color: var(--brand-navy);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: var(--nav-offset);
+}
+
+::selection {
+  background-color: var(--brand-blue);
+  color: #ffffff;
+}
+
+/* Visible, consistent keyboard focus */
+a:focus-visible,
+button:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible,
+.nav-link:focus-visible {
+  outline: 3px solid var(--brand-blue-bright);
+  outline-offset: 2px;
+}
+
+/* Skip link — hidden until focused */
+.skip-link {
+  position: absolute;
+  z-index: 2000;
+  left: 1rem;
+  top: -3.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  border-radius: 0 0 8px 8px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/*--------------------------------------
+  Header / navbar
+--------------------------------------*/
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: saturate(120%) blur(6px);
+  box-shadow: 0 2px 12px rgba(22, 53, 97, 0.08);
+}
 
 .navbar__brand__text {
   font-size: 40px;
-  color: #A3C1EF;
+  color: var(--brand-blue);
   margin-left: -35px;
+  transition: color 0.2s ease;
 }
 
-.navbar__brand__text:hover,
-:focus {
-  color: #163561;
-}
-
-.nav-item {
-  margin-top: -105px;
-}
-
-.nav-link {
-  display: block;
-  width: 120px;
-  text-decoration: none;
-  font-size: 25px;
-  text-align: center;
-  border-radius: 0 0 10px 10px;
-  margin-top: 20px;
-  height: 150px;
-  padding: 110px 5px 0 5px;
+.navbar-brand:hover .navbar__brand__text,
+.navbar-brand:focus .navbar__brand__text {
+  color: var(--brand-navy);
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #163561;
+  color: var(--brand-navy);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5rem 1.1rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:focus {
-  color: #ffffff;
-  background-color: #A3C1EF;
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--brand-navy);
+  background-color: var(--brand-blue);
 }
 
-.content-block {
-  margin-top: 70px;
+.header-actions {
+  gap: 0.5rem;
 }
 
-.btn {
-  border-radius: 10px;
-  height: 75px;
-  width: 170px;
+/* Circular icon buttons in the header */
+.btn-icon {
+  width: 44px;
+  height: 44px;
+  min-width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--brand-bg-tint);
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
+
+.btn-icon:hover,
+.btn-icon:focus {
+  background-color: var(--brand-blue);
+  transform: translateY(-1px);
+}
+
+/*--------------------------------------
+  Buttons
+--------------------------------------*/
 
 .btn__font__size {
   font-size: 20px;
 }
 
 .btn-outline-primary {
-  color: #ffffff;
-  background-color: #A3C1EF;
-  border-color: #A3C1EF;
+  color: var(--brand-navy);
+  background-color: var(--brand-blue);
+  border-color: var(--brand-blue);
+  min-width: 150px;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.btn-outline-primary:hover {
-  color: #163561;
-  background-color: #A3C1EF;
-  border-color: #A3C1EF;
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #ffffff;
+  background-color: var(--brand-navy);
+  border-color: var(--brand-navy);
+  box-shadow: 0 6px 18px rgba(22, 53, 97, 0.25);
+  transform: translateY(-2px);
 }
 
 /*--------------------------------------
-Home
+  Home / hero
 --------------------------------------*/
 
 .h1__font__size {
-  font-size: 75px;
-  color: #163561;
+  font-size: clamp(2.4rem, 6vw, 75px);
+  line-height: 1.1;
+  color: var(--brand-navy);
 }
 
 .text__font__size__p {
-  font-size: 25px;
-  color: #153461;
+  font-size: clamp(1.05rem, 2.2vw, 25px);
+  color: var(--brand-navy);
+  max-width: 60ch;
 }
 
 .text__yellow {
-  color: #FBB400;
+  color: var(--brand-yellow);
 }
 
 /*--------------------------------------
-History
---------------------------------------*/
-
-/*--------------------------------------
-Service
+  Services
 --------------------------------------*/
 
 .card {
@@ -110,17 +199,21 @@ Service
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #FAFBFF;
+  background-color: var(--brand-bg-soft);
   background-clip: border-box;
-  border: 1px solid #FAFBFF;
-  border-bottom: 4px solid #99BAED;
+  border: 1px solid var(--brand-bg-soft);
+  border-bottom: 4px solid var(--brand-blue-mid);
   border-radius: 1rem;
-  color: #163561;
+  color: var(--brand-navy);
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.card:hover {
-  background-color: #99BAED;
-  color: #ffffff;
+.card:hover,
+.card:focus-within {
+  background-color: var(--brand-blue-mid);
+  color: var(--brand-navy);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(22, 53, 97, 0.18);
 }
 
 .service__logo {
@@ -129,125 +222,177 @@ Service
   align-items: center;
   width: 6rem;
   height: 7rem;
-  margin: 2rem auto 2rem auto;
-  background-color: #E5ECFE;
-  border-bottom: 2px solid #5b95ec;
+  margin: 2rem auto 1.5rem auto;
+  background-color: var(--brand-bg-tint);
+  border-bottom: 2px solid var(--brand-blue-bright);
   border-radius: 1rem;
 }
 
 .card-title {
-  margin-bottom: 3rem;
-  font-size: 45px;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.8rem, 3vw, 45px);
   text-align: center;
 }
 
-.card-text:last-child {
-  margin-bottom: 3rem;
-  font-size: 25px;
+.card-text {
+  font-size: clamp(1rem, 2vw, 20px);
   text-align: center;
+}
+
+.card-price {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--brand-navy);
+  margin-bottom: 1.25rem;
 }
 
 /*--------------------------------------
-Gallary
+  Gallery
 --------------------------------------*/
 
-
-
-/*Задавання для фото ефекту фону над ним*/
+/* Gallery items are <button> elements — strip the default chrome */
+.gallery-item {
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
 
 .hover-image-filter {
   display: inline-block;
-  background: #5b95ec;
+  background: var(--brand-blue-bright);
   line-height: 0;
 }
 
 .hover-image-filter img {
-  transition: filter 0.5s linear;
+  transition: filter 0.5s linear, transform 0.5s ease;
   filter: brightness(2) grayscale(1) opacity(0.5);
 }
 
-.hover-image-filter:hover img {
+.hover-image-filter:hover img,
+.hover-image-filter:focus img {
   filter: none;
+  transform: scale(1.04);
 }
 
-/*END*/
-
 /*--------------------------------------
-Footer
+  Footer
 --------------------------------------*/
+
+footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  background-color: var(--brand-bg-soft);
+}
+
+.newsletter__input {
+  flex: 1 1 220px;
+  max-width: 320px;
+  min-width: 0;
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .newsletter__input,
+  .newsletter .btn-outline-primary {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
 
 .social__circle {
-  width: 40px;
-  height: 40px;
-  background-color: #99BAED;
+  width: 44px;
+  height: 44px;
+  background-color: var(--brand-blue-mid);
   margin: 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.social__circle:hover {
-  background-color: #163561;
+.social__circle:hover,
+.social__circle:focus-within {
+  background-color: var(--brand-navy);
+  transform: translateY(-2px);
 }
 
-hr {
-  background-color: #99BAED;
+hr.line__footer {
+  background-color: var(--brand-blue-mid);
   opacity: 1;
+  height: 2px;
+  border: 0;
 }
 
-hr:not([size]) {
-  height: 2px;
+.footer__copyright {
+  color: var(--brand-navy);
+  opacity: 0.7;
+  font-size: 0.95rem;
 }
 
 /*--------------------------------------
-Media
+  Modals, toasts & lightbox
 --------------------------------------*/
 
-@media (min-width: 1200px) {
+.modal-title {
+  color: var(--brand-navy);
+  font-weight: 700;
+}
 
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 0.25rem rgba(163, 193, 239, 0.4);
+}
+
+.lightbox-content {
+  background-color: transparent;
+  border: 0;
+}
+
+.lightbox-content .img-fluid {
+  border-radius: 12px;
+}
+
+.toast-header strong {
+  color: var(--brand-navy);
+}
+
+/*--------------------------------------
+  Media queries
+--------------------------------------*/
+
+/* Tablet & down: relax the brand negative margin */
+@media (max-width: 991px) {
+  .navbar__brand__text {
+    margin-left: -28px;
+  }
+  .header-actions {
+    margin-top: 0.75rem;
+  }
 }
 
 @media (max-width: 575px) {
-  /*--------------------
-    Header
-    ---------------------*/
-
-  .nav-item {
-    margin-top: 0;
-  }
-
-  .nav-link {
-    display: inline-block;
-    width: auto;
-    text-decoration: none;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 10px 10px 10px 10px;
-    margin-top: 0;
-    height: 100%;
-    padding: 0;
+  .navbar__brand__text {
+    font-size: clamp(24px, 7vw, 32px);
+    margin-left: -24px;
   }
 
   .h1__font__size {
-    font-size: 45px;
     text-align: center;
   }
 
   .text__font__size__p {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .align__button {
     display: flex;
     justify-content: center;
   }
-}
 
-@media (min-width: 576px) and (max-width: 767px) {
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
+  .btn-outline-primary {
+    min-width: 140px;
+  }
 }
