@@ -1,0 +1,27 @@
+# ---- JetBrains IDE (WebStorm / PhpStorm / IntelliJ) ----
+.idea/
+*.iml
+
+# ---- VS Code ----
+.vscode/
+
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ---- Windows ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---- Logs & editor temp files ----
+*.log
+*.swp
+*.swo
+*~
+
+# ---- Dependencies (if any tooling is added later) ----
+# NOTE: the committed bootstrap-*-dist/ folders are intentional and NOT ignored.
+node_modules/
