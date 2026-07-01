@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Seniv Pavlo">
+    <meta name="description"
+          content="See how Alivio works in a real customer's life — Kayla's success story.">
+    <meta name="theme-color" content="#01996D">
+    <title>Community — Alivio</title>
+    <link rel="icon" href="img/logo_photo2.png" type="image/png">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&family=Suez+One&display=swap"
+          rel="stylesheet">
+</head>
+<body class="text-Lato">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light_1 border-bottom border-dark sticky-top"
+         aria-label="Main navigation">
+        <div class="container p-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><b class="fs-1 brand-color">Alivio</b></a>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ms-lg-5 me-auto text-center ps-3 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Why Alivio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="solutions.html">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="community.html">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-outline-success ms-2 me-2" type="button"
+                            data-bs-toggle="modal" data-bs-target="#signInModal">Sign in</button>
+                    <button class="btn btn-outline-success btn-bg text-white btn-w" type="button"
+                            data-bs-toggle="modal" data-bs-target="#trialModal">Start Trial</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="main">
+    <section class="container-fluid p-section-2 m-0 bg-section-2" aria-labelledby="community-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-5 pb-5 align-self-center">
+                    <h1 id="community-title" class="text-white text-size2"><b>Let's hear about <br> Kayla's success story</b></h1>
+                    <p class="text-white">See how well Alivio works in a real customer's life.</p>
+                    <button type="button" class="btn btn-outline-success btn-bg text-white btn-w"
+                            data-bs-toggle="modal" data-bs-target="#trialModal">Let's get started
+                    </button>
+                </div>
+
+                <div class="col-lg-6 pt-5 pb-5">
+                    <div class="ratio ratio-16x9 rounded overflow-hidden">
+                        <iframe src="https://www.youtube.com/embed/inpok4MKVLM"
+                                title="A 5-minute guided meditation to relax and manage stress"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="container-fluid bg-section-2">
+    <div class="container p-0 pt-5 pb-5">
+        <a href="index.html" id="footer-logo" class="nav-link fs-1 link-light text-SuezOne">Alivio</a>
+        <a href="index.html" class="nav-link fs-5 link-light">Why Alivio</a>
+        <a href="solutions.html" class="nav-link fs-5 link-light">Solutions</a>
+        <a href="community.html" class="nav-link fs-5 link-light">Community</a>
+        <a href="pricing.html" class="nav-link fs-5 link-light">Pricing</a>
+
+        <form class="newsletter needs-validation d-flex flex-wrap gap-2 mt-4" id="newsletterForm" novalidate>
+            <label class="visually-hidden" for="newsletterEmail">Email address</label>
+            <input type="email" class="form-control newsletter__input" id="newsletterEmail"
+                   placeholder="Your email" required>
+            <button type="submit" class="btn btn-outline-success btn-bg text-white btn-w">Subscribe</button>
+            <div class="invalid-feedback w-100 text-white">Please enter a valid email address.</div>
+        </form>
+
+        <p class="footer__copyright pt-4 mb-0">© <span id="currentYear">2024</span> Alivio. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Sign-in modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-4 brand-color" id="signInModalLabel">Sign in to Alivio</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="signInForm" class="needs-validation" novalidate>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="siEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="siEmail" required>
+                        <div class="invalid-feedback">Please enter your email.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="siPass" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="siPass" required minlength="6">
+                        <div class="invalid-feedback">Password must be at least 6 characters.</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-outline-success btn-bg text-white w-100">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Start trial modal -->
+<div class="modal fade" id="trialModal" tabindex="-1" aria-labelledby="trialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-4 brand-color" id="trialModalLabel">Start your free trial</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="trialForm" class="needs-validation" novalidate>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="trName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="trName" required>
+                        <div class="invalid-feedback">Please tell us your name.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="trEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="trEmail" required>
+                        <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="trFocus" class="form-label">What would you like to work on?</label>
+                        <select class="form-select" id="trFocus" required>
+                            <option value="" selected disabled>Choose a focus area…</option>
+                            <option>Anxiety</option>
+                            <option>Feeling overwhelmed</option>
+                            <option>Sadness</option>
+                            <option>Anger management</option>
+                        </select>
+                        <div class="invalid-feedback">Please choose a focus area.</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-outline-success btn-bg text-white">Start trial</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="appToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto brand-color" id="toastTitle">Alivio</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body" id="toastBody"></div>
+    </div>
+</div>
+
+<script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

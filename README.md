@@ -11,8 +11,8 @@ HTML, CSS and [Bootstrap 5](https://getbootstrap.com/), and is published with Gi
 
 | # | Project | What it is | Stack | Live demo |
 |---|---------|------------|-------|-----------|
-| 1 | **[Alivio](Project1/)** | Landing page for a stress-management journaling app | HTML5 · Bootstrap 5.0.0-beta2 · custom CSS/JS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Project1/) |
-| 2 | **[Barber](Project2_Barber/)** | Landing page for a barbershop | HTML5 · Bootstrap 5.0.1 · WebP · custom CSS/JS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Project2_Barber/) |
+| 1 | **[Alivio](Alivio/)** | Landing page for a stress-management journaling app | HTML5 · Bootstrap 5.0.0-beta2 · custom CSS/JS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Alivio/) |
+| 2 | **[Barber](Barber/)** | Landing page for a barbershop | HTML5 · Bootstrap 5.0.1 · WebP · custom CSS/JS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Barber/) |
 
 Each project has its own `README.md` with full details.
 
@@ -20,9 +20,9 @@ Each project has its own `README.md` with full details.
 
 ```
 ProjectFigma/
-├── Project1/            # "Alivio" landing page
-├── Project2_Barber/     # "Barber" landing page
-└── README.md            # this file
+├── Alivio/       # "Alivio" landing page
+├── Barber/       # "Barber" landing page
+└── README.md     # this file
 ```
 
 ## Running locally
@@ -35,10 +35,10 @@ git clone https://github.com/pavloseniv/ProjectFigma.git
 cd ProjectFigma
 
 # open directly…
-open Project1/index.html          # macOS
+open Alivio/index.html          # macOS
 
 # …or serve the whole repo
-python3 -m http.server 8000       # then visit http://localhost:8000/Project1/
+python3 -m http.server 8000       # then visit http://localhost:8000/Alivio/
 ```
 
 ## Author
@@ -60,8 +60,8 @@ python3 -m http.server 8000       # then visit http://localhost:8000/Project1/
 
 | # | Проект | Що це | Стек | Демо |
 |---|--------|-------|------|------|
-| 1 | **[Alivio](Project1/)** | Лендинг застосунку-щоденника для керування стресом | HTML5 · Bootstrap 5.0.0-beta2 · власний CSS/JS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Project1/) |
-| 2 | **[Barber](Project2_Barber/)** | Лендинг барбершопу | HTML5 · Bootstrap 5.0.1 · WebP · власний CSS/JS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Project2_Barber/) |
+| 1 | **[Alivio](Alivio/)** | Лендинг застосунку-щоденника для керування стресом | HTML5 · Bootstrap 5.0.0-beta2 · власний CSS/JS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Alivio/) |
+| 2 | **[Barber](Barber/)** | Лендинг барбершопу | HTML5 · Bootstrap 5.0.1 · WebP · власний CSS/JS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Barber/) |
 
 Детальний опис кожного проекту — у його власному `README.md`.
 
@@ -74,7 +74,7 @@ python3 -m http.server 8000       # then visit http://localhost:8000/Project1/
 git clone https://github.com/pavloseniv/ProjectFigma.git
 cd ProjectFigma
 
-python3 -m http.server 8000       # далі відкрий http://localhost:8000/Project1/
+python3 -m http.server 8000       # далі відкрий http://localhost:8000/Alivio/
 ```
 
 ## Автор

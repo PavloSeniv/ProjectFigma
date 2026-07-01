@@ -90,14 +90,19 @@ button:focus-visible,
 
 .navbar__brand__text {
   font-size: 40px;
-  color: var(--brand-blue);
-  margin-left: -35px;
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin-left: -2px;
   transition: color 0.2s ease;
 }
 
-.navbar-brand:hover .navbar__brand__text,
-.navbar-brand:focus .navbar__brand__text {
-  color: var(--brand-navy);
+.navbar-brand {
+  transition: opacity 0.2s ease;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  opacity: 0.8;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -266,14 +271,14 @@ button:focus-visible,
 }
 
 .hover-image-filter img {
-  transition: filter 0.5s linear, transform 0.5s ease;
-  filter: brightness(2) grayscale(1) opacity(0.5);
+  transition: filter 0.4s ease, transform 0.5s ease;
+  filter: grayscale(0.55) brightness(1.03);
 }
 
 .hover-image-filter:hover img,
 .hover-image-filter:focus img {
   filter: none;
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 /*--------------------------------------
@@ -363,18 +368,25 @@ hr.line__footer {
 
 /* Tablet & down: relax the brand negative margin */
 @media (max-width: 991px) {
-  .navbar__brand__text {
-    margin-left: -28px;
-  }
   .header-actions {
     margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn__font__size {
+    font-size: clamp(0.95rem, 3vw, 1.15rem);
+  }
+  .btn-outline-primary {
+    min-width: 130px;
+    padding: 0.6rem 1rem;
   }
 }
 
 @media (max-width: 575px) {
   .navbar__brand__text {
     font-size: clamp(24px, 7vw, 32px);
-    margin-left: -24px;
+    margin-left: -2px;
   }
 
   .h1__font__size {

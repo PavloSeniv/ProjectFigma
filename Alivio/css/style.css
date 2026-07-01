@@ -48,7 +48,9 @@
     background: url("../img/bg-photo_1.jpg") no-repeat center center;
     background-size: cover;
     width: 100%;
-    min-height: 90vh;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
 }
 
 .text-green {
@@ -128,7 +130,7 @@ video {
 }
 
 .Photo5 {
-    background: url("../img/Photo5.png") no-repeat border-box;
+    background: url("../img/Photo5.png") no-repeat;
     height: 574px;
 }
 
@@ -158,8 +160,9 @@ video {
     font-size: 10px;
 }
 
-.link-light:hover {
-    color: #000000;
+.link-light:hover,
+.link-light:focus {
+    color: #ffffff;
 }
 
 /*--------------------------------------
@@ -246,6 +249,24 @@ button:focus-visible,
 
 .link-light {
     transition: color 0.2s ease;
+}
+
+.footer__copyright {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+}
+
+/* Footer sits on a dark background — give its links a light, visible focus ring */
+footer a:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* CTA buttons shouldn't keep a fixed 150px width once the layout narrows */
+@media (max-width: 991px) {
+    .btn-w {
+        width: auto;
+    }
 }
 
 .newsletter__input {
@@ -370,7 +391,7 @@ button:focus-visible,
     }
 
     #Text-Header {
-        font-size: 11.5px;
+        font-size: 15px;
     }
 
     .text-size2 {

@@ -5,7 +5,7 @@ Part of the [ProjectFigma](../README.md) collection and the second project in th
 it layers WebP image optimization and interactive Bootstrap components (modals, toasts,
 a gallery lightbox) on top of the plain HTML/CSS approach.
 
-**Live demo:** https://pavloseniv.github.io/ProjectFigma/Project2_Barber/
+**Live demo:** https://pavloseniv.github.io/ProjectFigma/Barber/
 
 ## Overview
 
@@ -30,6 +30,7 @@ and a photo gallery — with a working appointment-booking flow.
 - **Gallery lightbox** — click any gallery photo to view it larger in a modal.
 - **Newsletter subscribe** — footer form with validation and a toast.
 - **Toasts** — non-blocking confirmations for every action.
+- **Live details** — footer social links open Facebook / Twitter / Google in a new tab, and the copyright year updates itself via JS.
 
 ## Tech stack
 
@@ -44,7 +45,7 @@ and a photo gallery — with a working appointment-booking flow.
 ## Project structure
 
 ```
-Project2_Barber/
+Barber/
 ├── index.html
 ├── css/
 │   └── style.css        # all styles (loaded by index.html)
@@ -66,10 +67,10 @@ Static page — no build step required:
 
 ```bash
 # from the repository root
-open Project2_Barber/index.html   # macOS
+open Barber/index.html   # macOS
 
 # or serve it
-python3 -m http.server 8000       # then visit http://localhost:8000/Project2_Barber/
+python3 -m http.server 8000       # then visit http://localhost:8000/Barber/
 ```
 
 ## Accessibility & responsiveness
@@ -91,7 +92,7 @@ python3 -m http.server 8000       # then visit http://localhost:8000/Project2_Ba
 HTML/CSS додано оптимізацію зображень у WebP та інтерактивні компоненти Bootstrap
 (модалки, тости, лайтбокс галереї).
 
-**Демо:** https://pavloseniv.github.io/ProjectFigma/Project2_Barber/
+**Демо:** https://pavloseniv.github.io/ProjectFigma/Barber/
 
 ## Про проект
 
@@ -116,6 +117,7 @@ HTML/CSS додано оптимізацію зображень у WebP та і�
 - **Лайтбокс галереї** — клік по фото відкриває його більшим.
 - **Підписка** — форма у футері з валідацією і тостом.
 - **Тости** — ненав'язливі підтвердження дій.
+- **Динамічні деталі** — соцпосилання у футері відкривають Facebook / Twitter / Google у новій вкладці, а рік у копірайті оновлюється сам через JS.
 
 ## Стек
 
@@ -130,7 +132,7 @@ HTML/CSS додано оптимізацію зображень у WebP та і�
 ## Структура
 
 ```
-Project2_Barber/
+Barber/
 ├── index.html
 ├── css/style.css        # усі стилі (підключає index.html)
 ├── js/script.js         # vanilla JS: WebP, форми, тости, лайтбокс
@@ -143,9 +145,9 @@ Project2_Barber/
 ## Запуск локально
 
 ```bash
-open Project2_Barber/index.html   # macOS
+open Barber/index.html   # macOS
 # або
-python3 -m http.server 8000       # http://localhost:8000/Project2_Barber/
+python3 -m http.server 8000       # http://localhost:8000/Barber/
 ```
 
 ## Доступність та адаптив

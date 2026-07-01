@@ -4,6 +4,10 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+    /* ---- Keep the footer year current ---- */
+    var yearEl = document.getElementById('currentYear');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
     /* ---- Toast helper ---- */
     var toastEl = document.getElementById('appToast');
     var toastTitle = document.getElementById('toastTitle');

@@ -5,22 +5,25 @@ journaling app. Coded from a Figma layout and part of the
 [ProjectFigma](../README.md) collection, with interactive sign-up flows built on
 Bootstrap modals and toasts.
 
-**Live demo:** https://pavloseniv.github.io/ProjectFigma/Project1/
+**Live demo:** https://pavloseniv.github.io/ProjectFigma/Alivio/
 
 ## Overview
 
 Alivio is presented as a personalized journaling experience that helps people become
-aware of and manage their stress. The single-page site walks a visitor through the value
-proposition, how the product works, a customer story, and a pricing/product call to action.
+aware of and manage their stress. The **home page** is a full landing (hero, how it works,
+a customer story and pricing), and each nav item also has its own **dedicated page** in the
+same design.
 
-### Sections
+### Pages
 
-| Anchor | Section | Content |
-|--------|---------|---------|
-| `#WhyAlivio` | Hero | Brand navbar, headline *"Be aware, Manage well."* and a call to action over a background photo |
-| `#Solutions` | How it works | Three steps — **Personalize**, **Write & Understand**, **Alivio!** |
-| `#Community` | Success story | "Kayla's success story" text alongside an embedded `<video>` |
-| `#Pricing` | Our product | A "Customized For" card and a "Find Your Way" call to action |
+| Page | What's on it |
+|------|--------------|
+| `index.html` | **Why Alivio** — home landing: hero *"Be aware, Manage well."* plus an overview of how it works, the success story and pricing |
+| `solutions.html` | **Solutions** — "Understand & Release the stress in 3 steps" (Personalize · Write & Understand · Alivio!) |
+| `community.html` | **Community** — "Kayla's success story" with an embedded YouTube video (a short guided meditation) |
+| `pricing.html` | **Pricing** — the "Customized For" product card and a "Find Your Way" call to action |
+
+All pages share the same sticky navbar, footer, modals and toasts.
 
 ## Interactive features
 
@@ -31,7 +34,7 @@ proposition, how the product works, a customer story, and a pricing/product call
 
 ## Tech stack
 
-- **HTML5** — a single, semantic `index.html` with landmarks, `aria-*`, a skip link and a proper heading order.
+- **HTML5** — four semantic pages sharing a sticky navbar and footer, with landmarks, `aria-*`, a skip link and a per-page heading order.
 - **[Bootstrap 5.0.0-beta2](https://getbootstrap.com/)** — grid, navbar, buttons, **modals** and **toasts** (vendored under `bootstrap-5.0.0-beta2-dist/`).
 - **Custom CSS** — `css/style.css`: colours, typography, a responsive `background-size: cover` hero, focus-visible states, transitions and a `prefers-reduced-motion` fallback.
 - **Custom JS** — `js/script.js` (vanilla): form validation and toast confirmations for the sign-in, trial and newsletter forms.
@@ -40,15 +43,18 @@ proposition, how the product works, a customer story, and a pricing/product call
 ## Project structure
 
 ```
-Project1/
-├── index.html
+Alivio/
+├── index.html           # Why Alivio (home landing, all sections)
+├── solutions.html       # Solutions page
+├── community.html       # Community page
+├── pricing.html         # Pricing page
 ├── css/
 │   └── style.css
 ├── js/
-│   └── script.js        # form validation + toasts
-├── img/                 # photos and logos used across the page
+│   └── script.js        # form validation, toasts, dynamic footer year
+├── img/                 # photos and logos used across the pages
 ├── video/
-│   └── video1.mp4       # embedded in the Community section
+│   └── video1.mp4       # legacy asset — Community now embeds a YouTube video
 ├── bootstrap-5.0.0-beta2-dist/
 │   ├── css/
 │   └── js/
@@ -61,10 +67,10 @@ Static page — no build step required:
 
 ```bash
 # from the repository root
-open Project1/index.html          # macOS
+open Alivio/index.html          # macOS
 
 # or serve it
-python3 -m http.server 8000       # then visit http://localhost:8000/Project1/
+python3 -m http.server 8000       # then visit http://localhost:8000/Alivio/
 ```
 
 ## Accessibility & responsiveness
@@ -92,22 +98,24 @@ python3 -m http.server 8000       # then visit http://localhost:8000/Project1/
 [ProjectFigma](../README.md), з інтерактивними сценаріями реєстрації на модалках і тостах
 Bootstrap.
 
-**Демо:** https://pavloseniv.github.io/ProjectFigma/Project1/
+**Демо:** https://pavloseniv.github.io/ProjectFigma/Alivio/
 
 ## Про проект
 
 Alivio подається як персоналізований щоденник, що допомагає усвідомлювати стрес і
-керувати ним. Односторінковий сайт проводить відвідувача через переваги продукту, опис
-того, як він працює, історію клієнта та блок із продуктом і закликом до дії.
+керувати ним. **Головна** — це повний лендинг (hero, як це працює, історія клієнта та
+ціни), а кожен пункт меню має ще й **власну сторінку** в тому ж дизайні.
 
-### Секції
+### Сторінки
 
-| Якір | Секція | Вміст |
-|------|--------|-------|
-| `#WhyAlivio` | Hero | Навбар із брендом, заголовок *«Be aware, Manage well.»* і кнопка на фоновому фото |
-| `#Solutions` | How it works | Три кроки — **Personalize**, **Write & Understand**, **Alivio!** |
-| `#Community` | Історія успіху | Текст «Kayla's success story» поруч із вбудованим `<video>` |
-| `#Pricing` | Our product | Картка «Customized For» і заклик до дії «Find Your Way» |
+| Сторінка | Що на ній |
+|----------|-----------|
+| `index.html` | **Why Alivio** — головний лендинг: hero *«Be aware, Manage well.»* плюс огляд усіх секцій |
+| `solutions.html` | **Solutions** — «Understand & Release the stress in 3 steps» (Personalize · Write & Understand · Alivio!) |
+| `community.html` | **Community** — «Kayla's success story» із вбудованим відео з YouTube (коротка медитація) |
+| `pricing.html` | **Pricing** — картка «Customized For» і заклик «Find Your Way» |
+
+Усі сторінки мають спільні sticky-навбар, футер, модалки і тости.
 
 ## Інтерактив
 
@@ -118,7 +126,7 @@ Alivio подається як персоналізований щоденник
 
 ## Стек
 
-- **HTML5** — один семантичний `index.html` із лендмарками, `aria-*`, skip-link і коректною ієрархією заголовків.
+- **HTML5** — чотири семантичні сторінки зі спільними sticky-навбаром і футером, лендмарками, `aria-*`, skip-link і ієрархією заголовків на кожній сторінці.
 - **[Bootstrap 5.0.0-beta2](https://getbootstrap.com/)** — сітка, навбар, кнопки, **модалки** та **тости** (у `bootstrap-5.0.0-beta2-dist/`).
 - **Власний CSS** — `css/style.css`: кольори, типографіка, адаптивний hero (`background-size: cover`), `:focus-visible`, переходи та підтримка `prefers-reduced-motion`.
 - **Власний JS** — `js/script.js` (vanilla): валідація форм і тости-підтвердження для входу, тріалу та підписки.
@@ -127,12 +135,15 @@ Alivio подається як персоналізований щоденник
 ## Структура
 
 ```
-Project1/
-├── index.html
+Alivio/
+├── index.html           # Why Alivio (головний лендинг)
+├── solutions.html       # сторінка Solutions
+├── community.html       # сторінка Community
+├── pricing.html         # сторінка Pricing
 ├── css/style.css
-├── js/script.js         # валідація форм + тости
-├── img/                 # фото та логотипи сторінки
-├── video/video1.mp4     # вбудоване у секцію Community
+├── js/script.js         # валідація форм, тости, динамічний рік
+├── img/                 # фото та логотипи
+├── video/video1.mp4     # застарілий файл — Community вбудовує відео з YouTube
 ├── bootstrap-5.0.0-beta2-dist/
 └── README.md
 ```
@@ -140,9 +151,9 @@ Project1/
 ## Запуск локально
 
 ```bash
-open Project1/index.html          # macOS
+open Alivio/index.html          # macOS
 # або
-python3 -m http.server 8000       # http://localhost:8000/Project1/
+python3 -m http.server 8000       # http://localhost:8000/Alivio/
 ```
 
 ## Доступність та адаптив
