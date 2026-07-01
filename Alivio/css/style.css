@@ -45,12 +45,31 @@
 
 
 .bg-photo1 {
-    background: url("../img/bg-photo_1.jpg") no-repeat center center;
-    background-size: cover;
+    position: relative;
+    overflow: hidden;
     width: 100%;
     min-height: 88vh;
     display: flex;
     align-items: center;
+}
+
+/* Blurred background photo (kept behind the text, which stays sharp) */
+.bg-photo1::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    bottom: -14px;
+    left: -14px;
+    background: url("../img/bg-photo_1.jpg") no-repeat center center;
+    background-size: cover;
+    filter: blur(4px);
+    z-index: 0;
+}
+
+.bg-photo1 .container {
+    position: relative;
+    z-index: 1;
 }
 
 .text-green {
