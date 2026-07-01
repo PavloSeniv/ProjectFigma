@@ -477,3 +477,236 @@ footer a:focus-visible {
     }
 
 }
+
+/*--------------------------------------
+  Sub-page building blocks (Solutions / Community / Pricing)
+--------------------------------------*/
+
+:root {
+    --al-green: #01996D;
+    --al-green-dark: #245852;
+    --al-green-soft: #7ab5a8;
+    --al-green-tint: #e8f4f0;
+}
+
+/* Reusable page intro band */
+.page-hero {
+    background: linear-gradient(180deg, var(--al-green-tint) 0%, #ffffff 100%);
+    padding: 4rem 0 3rem;
+    text-align: center;
+}
+
+.page-hero .eyebrow {
+    color: var(--al-green);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-hero h1 {
+    font-family: 'Merriweather', serif;
+    color: var(--al-green);
+}
+
+.page-hero p {
+    max-width: 60ch;
+    margin: 1rem auto 0;
+    color: #4a5b57;
+}
+
+.section-title {
+    font-family: 'Merriweather', serif;
+    color: var(--al-green-dark);
+}
+
+/* Feature / "helps with" cards */
+.help-card {
+    background: #ffffff;
+    border: 1px solid var(--al-green-tint);
+    border-bottom: 4px solid var(--al-green-soft);
+    border-radius: 1rem;
+    padding: 1.75rem;
+    height: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.help-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(1, 153, 109, 0.15);
+}
+
+.help-card__icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--al-green-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.help-card h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    color: var(--al-green-dark);
+}
+
+/* Stats */
+.stat {
+    text-align: center;
+}
+
+.stat__num {
+    font-family: 'Merriweather', serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--al-green);
+    line-height: 1;
+}
+
+.stat__label {
+    color: #5a6b66;
+    margin-top: 0.25rem;
+}
+
+/* Testimonials */
+.testimonial {
+    background: #ffffff;
+    border: 1px solid var(--al-green-tint);
+    border-radius: 1rem;
+    padding: 1.75rem;
+    height: 100%;
+    box-shadow: 0 8px 24px rgba(36, 88, 82, 0.08);
+}
+
+.testimonial__quote {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    color: var(--al-green-dark);
+}
+
+.testimonial__author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--al-green-dark);
+}
+
+.testimonial__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--al-green-tint);
+    color: var(--al-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex: 0 0 auto;
+}
+
+/* Pricing tiers */
+.price-card {
+    background: #ffffff;
+    border: 1px solid var(--al-green-tint);
+    border-radius: 1.25rem;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(1, 153, 109, 0.15);
+}
+
+.price-card--featured {
+    border: 2px solid var(--al-green);
+    box-shadow: 0 16px 40px rgba(1, 153, 109, 0.18);
+    position: relative;
+}
+
+.price-card__badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--al-green);
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.9rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.price-card__name {
+    font-family: 'Merriweather', serif;
+    color: var(--al-green-dark);
+    font-size: 1.4rem;
+}
+
+.price-card__price {
+    font-family: 'Merriweather', serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--al-green);
+}
+
+.price-card__price span {
+    font-size: 1rem;
+    color: #5a6b66;
+    font-weight: 400;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0;
+    text-align: left;
+}
+
+.price-card li {
+    padding: 0.4rem 0 0.4rem 1.75rem;
+    position: relative;
+}
+
+.price-card li::before {
+    content: "✓";
+    color: var(--al-green);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+}
+
+/* CTA band */
+.cta-band {
+    background: var(--al-green-dark);
+    color: #ffffff;
+    border-radius: 1.25rem;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.cta-band h2 {
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+}
+
+/* FAQ accordion accents */
+.accordion-button:not(.collapsed) {
+    color: var(--al-green);
+    background-color: var(--al-green-tint);
+}
+
+.accordion-button:focus {
+    border-color: var(--al-green-soft);
+    box-shadow: 0 0 0 0.25rem rgba(1, 153, 109, 0.2);
+}

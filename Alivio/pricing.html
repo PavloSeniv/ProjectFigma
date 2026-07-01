@@ -57,50 +57,128 @@
 </header>
 
 <main id="main">
-    <section class="container mt-mb-100" aria-labelledby="pricing-title">
-        <div class="row">
-            <div class="d-flex justify-content-center col-lg-6 mb-lg-5 mb-md-5 mb-sm-5 mb-5">
+    <section class="page-hero" aria-labelledby="pricing-heading">
+        <div class="container">
+            <p class="eyebrow">Pricing</p>
+            <h1 id="pricing-heading">Simple pricing for a calmer mind</h1>
+            <p>Start free and upgrade whenever you're ready. Every plan is personalized to you,
+                and you can cancel anytime.</p>
+        </div>
+    </section>
 
-                <div class="content-1">
-                    <div class="Photo5">
-                        <div class="bg-light_1 position-relative top-70 start-012 border border-2 border-green content-2">
-                            <p class="mt-2" id="LogoText">
-                                Customized For
-                            </p>
-                            <span class="d-flex justify-content-center">
-                                    <img class="rounded-circle" src="img/logo_photo1.png" alt="Lisa's profile photo">
-                                </span>
-                            <p id="Name" class="text-center mt-2 mb-2 h5">Lisa</p>
-                            <p id="LogoText2">Your custom contents</p>
-                            <ul class="text-start L-Text">
-                                <li>
-                                    Understand Your Stress
-                                </li>
-                                <li>
-                                    Anger Management
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <section class="container py-5" aria-labelledby="plans-heading">
+        <h2 id="plans-heading" class="visually-hidden">Plans</h2>
+        <div class="row g-4 align-items-stretch">
+            <div class="col-lg-4">
+                <div class="price-card">
+                    <p class="price-card__name">Free</p>
+                    <p class="price-card__price">$0<span>/month</span></p>
+                    <p class="text-muted">For getting started with journaling.</p>
+                    <ul>
+                        <li>1 guided journal</li>
+                        <li>Daily prompts</li>
+                        <li>Mood tracking</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-success w-100 mt-auto"
+                            data-bs-toggle="modal" data-bs-target="#trialModal">Start free</button>
                 </div>
             </div>
-
-            <div class="col-lg-6 ps-lg-5 pe-lg-5 mt-5">
-                <p class="h5 brand-color fw-bold mb-2">Our product</p>
-                <h1 class="text-green text-size2" id="pricing-title">
-                    <b id="Text-Product">You tell us your stress, <br>
-                        We make your diary
-                    </b>
-                </h1>
-                <p>
-                    Everyone experiences it, and in different ways.
-                    Let Alivio guide you, in a personalized journal experience, to overcome your stress.
-                </p>
-                <button type="button" class="btn btn-outline-success btn-bg text-white btn-w"
-                        data-bs-toggle="modal" data-bs-target="#trialModal">
-                    Find Your Way
-                </button>
+            <div class="col-lg-4">
+                <div class="price-card price-card--featured">
+                    <span class="price-card__badge">Most popular</span>
+                    <p class="price-card__name">Plus</p>
+                    <p class="price-card__price">$6<span>/month</span></p>
+                    <p class="text-muted">Everything you need to build the habit.</p>
+                    <ul>
+                        <li>Everything in Free</li>
+                        <li>Unlimited journals</li>
+                        <li>All focus areas</li>
+                        <li>Weekly insights</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-success btn-bg text-white w-100 mt-auto"
+                            data-bs-toggle="modal" data-bs-target="#trialModal">Start free trial</button>
+                </div>
             </div>
+            <div class="col-lg-4">
+                <div class="price-card">
+                    <p class="price-card__name">Premium</p>
+                    <p class="price-card__price">$12<span>/month</span></p>
+                    <p class="text-muted">For deeper support and insight.</p>
+                    <ul>
+                        <li>Everything in Plus</li>
+                        <li>Monthly 1-on-1 check-in</li>
+                        <li>Advanced analytics</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-success w-100 mt-auto"
+                            data-bs-toggle="modal" data-bs-target="#trialModal">Go Premium</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5" aria-labelledby="faq-heading">
+        <div class="text-center mb-4">
+            <h2 id="faq-heading" class="section-title">Frequently asked questions</h2>
+        </div>
+        <div class="accordion mx-auto" id="faqAccordion" style="max-width: 720px;">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="faq1h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                        Can I cancel anytime?
+                    </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse" aria-labelledby="faq1h"
+                     data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Yes — plans are month-to-month and you can cancel with one click, no questions asked.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="faq2h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                        Is there a free trial?
+                    </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2h"
+                     data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Every paid plan starts with a 14-day free trial. No card required to try the Free plan.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="faq3h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                        Is my journal private?
+                    </button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3h"
+                     data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Always. Your entries are encrypted and only ever visible to you.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="faq4h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                        Which devices are supported?
+                    </button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4h"
+                     data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Alivio works in any modern browser, with apps for iOS and Android.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pb-5">
+        <div class="cta-band">
+            <h2>Find the plan that fits you</h2>
+            <p class="mb-4">Try Alivio free for 14 days — no commitment, cancel anytime.</p>
+            <button type="button" class="btn btn-outline-success btn-bg text-white btn-w"
+                    data-bs-toggle="modal" data-bs-target="#trialModal">Start your free trial</button>
         </div>
     </section>
 </main>

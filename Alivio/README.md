@@ -18,11 +18,12 @@ same design.
 
 | Page | What's on it |
 |------|--------------|
-| `index.html` | **Why Alivio** — home landing: hero *"Be aware, Manage well."* plus an overview of how it works, the success story and pricing |
-| `solutions.html` | **Solutions** — "Understand & Release the stress in 3 steps" (Personalize · Write & Understand · Alivio!) |
-| `community.html` | **Community** — "Kayla's success story" with an embedded YouTube video (a short guided meditation) |
-| `pricing.html` | **Pricing** — the "Customized For" product card and a "Find Your Way" call to action |
+| `index.html` | **Why Alivio** — home landing: hero *"Be aware, Manage well."*, the 3-step overview, a success-story video and a pricing preview |
+| `solutions.html` | **Solutions** — Alivio's features (guided journals, prompts, mood tracking, insights…) and what it helps with (anxiety, overwhelm, sadness, anger) |
+| `community.html` | **Community** — community features, headline stats and member testimonials |
+| `pricing.html` | **Pricing** — Free / Plus / Premium tiers and an FAQ |
 
+Each sub-page has its own layout and content (they don't just repeat the home page).
 All pages share the same sticky navbar, footer, modals and toasts.
 
 ## Interactive features
@@ -110,11 +111,12 @@ Alivio подається як персоналізований щоденник
 
 | Сторінка | Що на ній |
 |----------|-----------|
-| `index.html` | **Why Alivio** — головний лендинг: hero *«Be aware, Manage well.»* плюс огляд усіх секцій |
-| `solutions.html` | **Solutions** — «Understand & Release the stress in 3 steps» (Personalize · Write & Understand · Alivio!) |
-| `community.html` | **Community** — «Kayla's success story» із вбудованим відео з YouTube (коротка медитація) |
-| `pricing.html` | **Pricing** — картка «Customized For» і заклик «Find Your Way» |
+| `index.html` | **Why Alivio** — головний лендинг: hero *«Be aware, Manage well.»*, огляд 3 кроків, відео-історія успіху і прев'ю цін |
+| `solutions.html` | **Solutions** — можливості Alivio (журнали, підказки, трекінг настрою, інсайти…) і з чим допомагає (тривога, перевантаження, смуток, гнів) |
+| `community.html` | **Community** — можливості спільноти, ключова статистика і відгуки учасників |
+| `pricing.html` | **Pricing** — тарифи Free / Plus / Premium і FAQ |
 
+Кожна підсторінка має власний макет і контент (не повторює головну).
 Усі сторінки мають спільні sticky-навбар, футер, модалки і тости.
 
 ## Інтерактив
