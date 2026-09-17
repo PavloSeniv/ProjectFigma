@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!toastEl || typeof bootstrap === 'undefined') return;
         if (toastTitle) toastTitle.textContent = title || 'Alivio';
         if (toastBody) toastBody.textContent = message;
-        // getOrCreateInstance only exists in Bootstrap >= 5.1, so stay compatible
-        var toast = bootstrap.Toast.getInstance(toastEl) || new bootstrap.Toast(toastEl);
+        var toast = bootstrap.Toast.getOrCreateInstance(toastEl);
         toast.show();
     }
 

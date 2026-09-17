@@ -11,7 +11,7 @@ HTML, CSS and [Bootstrap 5](https://getbootstrap.com/), and is published with Gi
 
 | # | Project | What it is | Stack | Live demo |
 |---|---------|------------|-------|-----------|
-| 1 | **[Alivio](Alivio/)** | Landing page for a stress-management journaling app | HTML5 · Bootstrap 5.0.0-beta2 · custom CSS/JS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Alivio/) |
+| 1 | **[Alivio](Alivio/)** | Landing page for a stress-management journaling app | HTML5 · Bootstrap 5.1.3 · custom CSS/JS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Alivio/) |
 | 2 | **[Barber](Barber/)** | Landing page for a barbershop | HTML5 · Bootstrap 5.0.1 · WebP · custom CSS/JS | [Open ↗](https://pavloseniv.github.io/ProjectFigma/Barber/) |
 
 Each project has its own `README.md` with full details.
@@ -60,7 +60,7 @@ python3 -m http.server 8000       # then visit http://localhost:8000/Alivio/
 
 | # | Проект | Що це | Стек | Демо |
 |---|--------|-------|------|------|
-| 1 | **[Alivio](Alivio/)** | Лендинг застосунку-щоденника для керування стресом | HTML5 · Bootstrap 5.0.0-beta2 · власний CSS/JS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Alivio/) |
+| 1 | **[Alivio](Alivio/)** | Лендинг застосунку-щоденника для керування стресом | HTML5 · Bootstrap 5.1.3 · власний CSS/JS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Alivio/) |
 | 2 | **[Barber](Barber/)** | Лендинг барбершопу | HTML5 · Bootstrap 5.0.1 · WebP · власний CSS/JS | [Відкрити ↗](https://pavloseniv.github.io/ProjectFigma/Barber/) |
 
 Детальний опис кожного проекту — у його власному `README.md`.

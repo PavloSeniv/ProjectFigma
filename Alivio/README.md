@@ -36,7 +36,7 @@ All pages share the same sticky navbar, footer, modals and toasts.
 ## Tech stack
 
 - **HTML5** — four semantic pages sharing a sticky navbar and footer, with landmarks, `aria-*`, a skip link and a per-page heading order.
-- **[Bootstrap 5.0.0-beta2](https://getbootstrap.com/)** — grid, navbar, buttons, **modals** and **toasts** (vendored under `bootstrap-5.0.0-beta2-dist/`).
+- **[Bootstrap 5.1.3](https://getbootstrap.com/)** — grid, navbar, buttons, **collapse** (navbar toggler and the FAQ **accordion**), **modals** and **toasts** (vendored under `bootstrap-5.1.3-dist/`).
 - **Custom CSS** — `css/style.css`: colours, typography, a responsive `background-size: cover` hero, focus-visible states, transitions and a `prefers-reduced-motion` fallback.
 - **Custom JS** — `js/script.js` (vanilla): form validation and toast confirmations for the sign-in, trial and newsletter forms.
 - **Google Fonts** — [Lato](https://fonts.google.com/specimen/Lato), [Merriweather](https://fonts.google.com/specimen/Merriweather) and [Suez One](https://fonts.google.com/specimen/Suez+One).
@@ -54,9 +54,7 @@ Alivio/
 ├── js/
 │   └── script.js        # form validation, toasts, dynamic footer year
 ├── img/                 # photos and logos used across the pages
-├── video/
-│   └── video1.mp4       # legacy asset — Community now embeds a YouTube video
-├── bootstrap-5.0.0-beta2-dist/
+├── bootstrap-5.1.3-dist/
 │   ├── css/
 │   └── js/
 └── README.md
@@ -82,7 +80,7 @@ python3 -m http.server 8000       # then visit http://localhost:8000/Alivio/
 
 ## Notes & possible improvements
 
-- Bootstrap is pinned to a **beta** release (`5.0.0-beta2`); upgrading to a stable 5.x would be a safe follow-up (note: `getOrCreateInstance` only exists from 5.1, so the JS uses the version-safe `getInstance() || new` pattern).
+- Bootstrap is pinned to the stable **5.1.3** release — the lowest 5.x that both drops the beta and ships `getOrCreateInstance`, and it renders the pages pixel-for-pixel like `5.0.0-beta2` did. Moving on to 5.3.x is possible but not free: there the bare footer `.nav-link`s lose their padding (each page gets 80 px shorter) and the active navbar link loses its darker colour, so `css/style.css` would need adjusting first.
 - The Pricing card is built from a background-image technique with breakpoint-specific images (`Photo5*.png`); a pure-CSS card would be easier to maintain.
 - The vendored Bootstrap `dist` folder is committed; it could instead come from a CDN or a package manager.
 
@@ -129,7 +127,7 @@ Alivio подається як персоналізований щоденник
 ## Стек
 
 - **HTML5** — чотири семантичні сторінки зі спільними sticky-навбаром і футером, лендмарками, `aria-*`, skip-link і ієрархією заголовків на кожній сторінці.
-- **[Bootstrap 5.0.0-beta2](https://getbootstrap.com/)** — сітка, навбар, кнопки, **модалки** та **тости** (у `bootstrap-5.0.0-beta2-dist/`).
+- **[Bootstrap 5.1.3](https://getbootstrap.com/)** — сітка, навбар, кнопки, **collapse** (бургер навбару і **акордеон** FAQ), **модалки** та **тости** (у `bootstrap-5.1.3-dist/`).
 - **Власний CSS** — `css/style.css`: кольори, типографіка, адаптивний hero (`background-size: cover`), `:focus-visible`, переходи та підтримка `prefers-reduced-motion`.
 - **Власний JS** — `js/script.js` (vanilla): валідація форм і тости-підтвердження для входу, тріалу та підписки.
 - **Google Fonts** — Lato, Merriweather і Suez One.
@@ -145,8 +143,7 @@ Alivio/
 ├── css/style.css
 ├── js/script.js         # валідація форм, тости, динамічний рік
 ├── img/                 # фото та логотипи
-├── video/video1.mp4     # застарілий файл — Community вбудовує відео з YouTube
-├── bootstrap-5.0.0-beta2-dist/
+├── bootstrap-5.1.3-dist/
 └── README.md
 ```
 
@@ -166,7 +163,7 @@ python3 -m http.server 8000       # http://localhost:8000/Alivio/
 
 ## Нотатки та можливі покращення
 
-- Bootstrap зафіксовано на **beta** (`5.0.0-beta2`) — варто оновити до стабільної 5.x (увага: `getOrCreateInstance` є лише з 5.1, тож JS використовує сумісний патерн `getInstance() || new`).
+- Bootstrap зафіксовано на стабільній **5.1.3** — це найнижча 5.x, яка вже не бета і водночас має `getOrCreateInstance`, і вона малює сторінки піксель-у-піксель так само, як `5.0.0-beta2`. Перехід на 5.3.x можливий, але не безкоштовний: там футерні `.nav-link` без обгортки `.nav` втрачають padding (кожна сторінка коротшає на 80 px), а активне посилання навбару — свій темніший колір, тож спершу довелося б правити `css/style.css`.
 - Картку в Pricing побудовано на фоновому зображенні з різними картинками під брейкпоінти (`Photo5*.png`); чиста CSS-картка була б простішою в підтримці.
 - Папка `dist` Bootstrap закомічена; її можна замінити на CDN або пакетний менеджер.
 
